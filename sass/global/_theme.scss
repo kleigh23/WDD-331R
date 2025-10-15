@@ -59,6 +59,8 @@ $font-sizes: (
 
   --color-anchor: #{$link-color};
   --font-family: "Baloo 2", sans-serif;
+  --font-family-title: 'Fleur De Leah', serif;
+  --font-family-heading-2: 'Agu Display', sans-serif;
   --font-weight-strong: #{$font-weight-strong};
 
   @each $key, $size in $font-sizes {
