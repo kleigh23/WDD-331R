@@ -9,6 +9,9 @@
     text-align: center; }
   #about section:nth-child(2) ul {
     display: flex;
+    //This is where I made the grid - Kelley
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     justify-content: center;
     margin: 1rem 0 2rem;

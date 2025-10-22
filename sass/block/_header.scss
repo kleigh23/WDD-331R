@@ -13,9 +13,9 @@ header {
   color: var(--color-primary);
   text-align: center;
 
-  h1 {
-    @include logomark;
-  }
+  // h1 {
+  //   @include logomark;
+  // }
 
   h2 {
     max-width: 30ch;

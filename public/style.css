@@ -13,7 +13,7 @@
   --font-family-title: "Fleur De Leah", serif;
   --font-family-heading-2: "Agu Display", sans-serif;
   --font-weight-strong: 500;
-  --font-size-h1: 6rem;
+  --font-size-h1: 10rem;
   --font-size-h2: 3rem;
   --font-size-h3: 2rem;
   --font-size-h4: 1.35rem;
@@ -269,14 +269,6 @@ header {
   color: var(--color-primary);
   text-align: center;
 }
-header h1 {
-  display: inline-grid;
-  min-height: var(--logomark-height);
-  padding: var(--logomark-padding);
-  border: 0.16em solid var(--color-primary);
-  box-shadow: 0.12em 0.12em var(--color-secondary);
-  place-content: center;
-}
 header h2 {
   max-width: 30ch;
 }
@@ -395,6 +387,8 @@ nav ul li {
 
 #about section:nth-child(2) ul {
   display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem 0 2rem;
