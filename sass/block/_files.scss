@@ -12,7 +12,8 @@
   .container {
     display: inline-block;
     padding: 5vmin;
-    outline: 4px dashed var(--color-secondary);
+    // removed the border around the download CSS and HTML buttons - kelley
+    // outline: 4px dashed var(--color-secondary);
     background-color: var(--color-background);
     text-align: center;
 

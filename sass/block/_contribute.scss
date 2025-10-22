@@ -15,7 +15,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 1rem 0 2rem;
-    padding: 0;
+    // added padding 
+    padding: 0px 100px 0px 100px;
     list-style: none; }
     #about section:nth-child(2) ul li {
       margin: 0.25em;
@@ -36,4 +37,8 @@
     z-index: -1; }
     @media (max-width: 35rem) {
       #about section:nth-child(2)::before {
-        transform: scale(2) translate(-25%, -25%); } }
+        transform: scale(2) translate(-25%, -25%); }
+        // fixed the small screen grid so its not squished. - kelley
+      #about section:nth-child(2) ul {
+        grid-template-columns: 1fr;
+      } }
