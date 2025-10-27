@@ -26,7 +26,7 @@
       }
     }
 
-    &::before {
+    /*&::before {
       position: absolute;
       top: 60%;
       left: 50%;
@@ -52,10 +52,10 @@
       opacity: 0.8;
       content: "";
       z-index: -1;
-
+    
       @media (max-width: 35rem) {
         transform: scale(2) translate(-25%, -25%);
       }
-    }
+    }*/
   }
 }
