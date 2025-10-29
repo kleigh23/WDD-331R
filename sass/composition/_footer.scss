@@ -11,7 +11,8 @@
   background-position: center -34px;
   color: var(--color-light);
 
-  &::before {
+  // Kim - Commenting out to remove S monogram in the footer
+  /*&::before {
     @include logomark;
 
     position: absolute;
@@ -22,7 +23,7 @@
     color: var(--color-primary);
     font-size: 3rem;
     content: "S";
-  }
+  }*/
 
   p:first-child {
     margin-top: 3rem;

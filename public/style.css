@@ -621,22 +621,18 @@ nav ul li {
   background-repeat: repeat-x;
   background-position: center -34px;
   color: var(--color-light);
-}
-.page-footer::before {
-  display: inline-grid;
-  min-height: var(--logomark-height);
-  padding: var(--logomark-padding);
-  border: 0.16em solid var(--color-primary);
-  box-shadow: 0.12em 0.12em var(--color-secondary);
-  place-content: center;
-  position: absolute;
-  left: 50%;
-  width: 2em;
-  transform: translate(-50%, -100%);
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  font-size: 3rem;
-  content: "S";
+  /*&::before {
+    @include logomark;
+
+    position: absolute;
+    left: 50%;
+    width: 2em;
+    transform: translate(-50%, -100%);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-size: 3rem;
+    content: "S";
+  }*/
 }
 .page-footer p:first-child {
   margin-top: 3rem;
