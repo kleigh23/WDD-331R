@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Cantora+One&family=Fleur+De+Leah&family=Kavoon&family=Peralta&family=Piedra&family=Rakkas&family=Ranchers&family=Rancho&display=swap');
+
+body{
+    /* background-color: #d6cae8; */ 
+    /* background-color: #8876a3; */
+    background-color: #457f6f;
+
+}
+.waterfall-landscape {
+  position: relative;
+  /* border: 1px solid #ccc; */
+  z-index: 1;
+}
+
+.waterfall-landscape img {
+    position: absolute;
+}
+
+.long-waterfall {
+    position: block;
+}
+
+h1 {
+    text-align: center;
+    font-family: fleur de leah, sans-serif;
+    z-index: 10;
+    position: absolute;
+    font-size: 10rem;
+    color: #6096BA;
+    font-weight: lighter;
+    margin-left: 20rem;
+
+}
