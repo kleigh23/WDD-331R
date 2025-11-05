@@ -6,7 +6,7 @@
   --color-primary-alt: #6b9080;
   --color-secondary: #274c77;
   --color-background: #e7ecef;
-  --color-text: #4f6776;
+  --color-text: rgb(79.2197368421, 102.5960526316, 118.1802631579);
   --color-light: #fff;
   --color-anchor: #6096ba;
   --font-family: "Baloo 2", sans-serif;
@@ -206,7 +206,6 @@ blockquote::after {
 }
 
 body {
-  background-image: url("../images/waterfall-blue-long-01.png");
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
@@ -260,11 +259,9 @@ header {
   min-height: 40vh;
   place-items: center;
   padding: 10vh 2rem;
-  background-repeat: repeat-x;
-  background-position: 0 -38px, 17px -40px;
   color: var(--color-primary);
   text-align: center;
-  background-image: url("../images/mountains-green-01.png");
+  background-image: url(WDD-331R/images/mountains-green-01.png);
 }
 header h2 {
   max-width: 30ch;
@@ -359,7 +356,7 @@ nav ul li {
   /* (Sheyla): "I commented this out because we wanted the h2 "TL;DR" to be
   like the other h2s in the webpage, instead of having a tilted and gradient text effect.*/
 }
-@supports (background-clip: text) or (-webkit-background-clip: text) {
+@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
   #guidelines p:nth-of-type(2) {
     position: relative;
   }
@@ -429,7 +426,6 @@ nav ul li {
   #about section:nth-child(2)::before {
     transform: scale(2) translate(-25%, -25%);
   }
-
   #about section:nth-child(2) ul {
     grid-template-columns: 1fr;
   }
@@ -517,7 +513,7 @@ nav ul li {
 }
 @media (min-width: 515px) and (max-width: 765px) {
   #styles .features li:nth-last-child(1):nth-child(odd),
-.features.patterned li:nth-last-child(1):nth-child(odd) {
+  .features.patterned li:nth-last-child(1):nth-child(odd) {
     grid-column: span 2;
   }
 }
@@ -619,7 +615,7 @@ nav ul li {
   --logomark-padding: 0;
   position: relative;
   padding: 3rem 1rem;
-  background-image: url("../images/bottom-river-long-blue-01.png");
+  background-color: var(--color-primary);
   background-repeat: repeat-x;
   background-position: center -34px;
   color: var(--color-light);
@@ -728,4 +724,4 @@ nav ul li {
   height: 1em;
   margin-right: 0.25em;
   fill: currentColor;
-}
+}/*# sourceMappingURL=style.css.map */
