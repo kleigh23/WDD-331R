@@ -27,12 +27,12 @@ header {
 }
 
 header .container {
-  background-image: url('./images/mountains-green-01.png'); // this is where we styled the images for the header.
+  background-image: url('images/mountains-green-01.png'); // this is where we styled the images for the header.
   height: 4000px;
   width: 100%;
   position: relative;
   h1{
-    background-image: url('../images/tree-green-01.png');
+    background-image: url('images/tree-green-01.png');
     position: absolute;
     height: 4000px;
     width: 100%;
@@ -40,7 +40,7 @@ header .container {
     padding-top: 1em;
   }
   h2{
-    background-image: url('/images/hill-brown-01.png');
+    background-image: url('images/hill-brown-01.png');
     position: absolute;
     height: 4000px;
     width: 100%;
