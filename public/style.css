@@ -447,7 +447,6 @@ nav ul li {
 #files .container {
   display: inline-block;
   padding: 5vmin;
-  background-color: var(--color-background);
   text-align: center;
 }
 #files .container a:not(:last-child) {

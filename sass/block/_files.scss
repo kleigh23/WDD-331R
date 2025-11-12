@@ -14,7 +14,7 @@
     padding: 5vmin;
     // removed the border around the download CSS and HTML buttons - kelley
     // outline: 4px dashed var(--color-secondary);
-    background-color: var(--color-background);
+    // background-color: var(--color-background); - kelley removed this to see waterfall.
     text-align: center;
 
     a:not(:last-child) {
