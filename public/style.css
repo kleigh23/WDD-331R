@@ -264,10 +264,36 @@ header {
   background-position: 0 -38px, 17px -40px;
   color: var(--color-primary);
   text-align: center;
-  background-image: url("../images/mountains-green-01.png");
 }
-header h2 {
-  max-width: 30ch;
+
+header .container {
+  background-image: url("./images/mountains-green-01.png");
+  height: 4000px;
+  width: 100%;
+  position: relative;
+}
+header .container h1 {
+  background-image: url("../images/tree-green-01.png");
+  position: absolute;
+  height: 4000px;
+  width: 100%;
+  z-index: 1;
+  padding-top: 1em;
+}
+header .container h2 {
+  background-image: url("/images/hill-brown-01.png");
+  position: absolute;
+  height: 4000px;
+  width: 100%;
+  z-index: 10;
+  padding-top: 7em;
+}
+header .container p {
+  position: absolute;
+  height: 4000px;
+  width: 100%;
+  z-index: 10;
+  padding-top: 25em;
 }
 
 nav ul {
@@ -619,6 +645,7 @@ nav ul li {
   position: relative;
   padding: 3rem 1rem;
   background-image: url("../images/bottom-river-long-blue-01.png");
+  z-index: 100;
   background-repeat: repeat-x;
   background-position: center -34px;
   color: var(--color-light);
@@ -722,6 +749,9 @@ nav ul li {
   }
 }
 
+.link-github {
+  margin-top: 29em;
+}
 .link-github svg {
   width: 1em;
   height: 1em;

@@ -15,12 +15,47 @@ header {
   text-align: center;
 
   // h1 {
-  //   @include logomark;
+  //   @include logomark; 
   // }
 
-  h2 {
-    max-width: 30ch;
+  // h2 {
+  //   max-width: 30ch;
+  // }
+
+  // background-image: url('../images/mountains-green-01.png');
+  // height: 3000px;
+}
+
+header .container {
+  background-image: url('./images/mountains-green-01.png'); // this is where we styled the images for the header.
+  height: 4000px;
+  width: 100%;
+  position: relative;
+  h1{
+    background-image: url('../images/tree-green-01.png');
+    position: absolute;
+    height: 4000px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 1em;
+  }
+  h2{
+    background-image: url('/images/hill-brown-01.png');
+    position: absolute;
+    height: 4000px;
+    width: 100%;
+    z-index: 10;
+    padding-top: 7em;
+  }
+  p {
+    position: absolute;
+    height: 4000px;
+    width: 100%;
+    z-index: 10;
+    padding-top: 25em;
   }
 
-  background-image: url('../images/mountains-green-01.png');
 }
+
+
+
