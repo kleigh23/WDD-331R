@@ -663,6 +663,7 @@ nav ul li {
     font-size: 3rem;
     content: "S";
   }*/
+  /* Footer water animated - Kim */
 }
 .page-footer p:first-child {
   font-weight: var(--font-weight-strong);
@@ -680,13 +681,26 @@ nav ul li {
 .page-footer .container > :last-child {
   margin-bottom: 3rem;
 }
-.page-footer .container > :last-child::after {
+@keyframes flowing-water {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 60%;
+  }
+}
+.page-footer .container::after {
   content: "";
-  height: 25px;
-  width: 600px;
-  background-color: white;
-  border-radius: 70%;
+  position: absolute;
+  left: 30%;
+  bottom: 22px;
+  width: min(800px, 80vw);
+  height: 15px;
+  background: white;
+  border-radius: 300px/12.5px;
+  filter: blur(1px);
   z-index: 2;
+  animation: flowing-water 4s ease-in-out infinite alternate;
 }
 
 .skip-link {
