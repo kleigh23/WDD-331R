@@ -206,7 +206,8 @@ blockquote::after {
 }
 
 body {
-  background-image: url("images/waterfall-blue-long-01.png");
+  background-image: url("images/waterfall-blue-long-02.png");
+  background-repeat: repeat-y;
   background-color: white;
   color: var(--color-text);
   font-family: var(--font-family);
@@ -259,7 +260,6 @@ header {
   display: grid;
   min-height: 40vh;
   place-items: center;
-  padding: 10vh 2rem;
   background-repeat: repeat-x;
   background-position: 0 -38px, 17px -40px;
   color: var(--color-primary);
@@ -268,25 +268,41 @@ header {
 
 header .container {
   background-image: url("images/mountains-green-01.png");
-  height: 4000px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
   position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  z-index: -1;
 }
 header .container h1 {
-  background-image: url("images/tree-green-01.png");
+  background-image: url("images/tree-green-01-2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  transform: translateY(2rem);
   position: absolute;
-  height: 4000px;
+  height: 100%;
   width: 100%;
   z-index: 1;
   padding-top: 1em;
+  transform: translateZ(-10px) scale(2);
 }
 header .container h2 {
-  background-image: url("images/hill-brown-01.png");
+  background-image: url("images/hill-brown-01-2.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
   position: absolute;
-  height: 4000px;
+  height: 100%;
   width: 100%;
   z-index: 10;
-  padding-top: 7em;
+  padding-top: 8em;
+  transform: translateZ(-5px) scale(1.5);
 }
 header .container p {
   position: absolute;
@@ -663,6 +679,7 @@ nav ul li {
     font-size: 3rem;
     content: "S";
   }*/
+  /* Footer foam animated - Kim */
   /* Footer water animated - Kim */
 }
 .page-footer p:first-child {
@@ -677,9 +694,38 @@ nav ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
   font-size: 1.35rem;
+  z-index: 5;
 }
 .page-footer .container > :last-child {
   margin-bottom: 3rem;
+}
+@keyframes pulsing-foam {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+.page-footer ul::after {
+  content: "";
+  position: absolute;
+  left: 12%;
+  bottom: 85px;
+  width: min(2500px, 100vw);
+  height: 300px;
+  background-image: url("../images/bottom-river-long-foam.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  transform: translateX(-50%) translateY(-10px) scale(1);
+  animation: pulsing-foam 2s infinite;
+  z-index: -1;
 }
 @keyframes flowing-water {
   from {
@@ -759,8 +805,9 @@ nav ul li {
 .page-footer [class^=link] {
   width: 100%;
   min-height: 2.5em;
-  background-color: var(--color-background);
-  color: var(--color-primary);
+  background-color: #5f7470;
+  box-shadow: 0.3em 0.3em #25312e;
+  color: white;
 }
 
 /* (Sheyla): commented out to style "Fork the CodePen as a button" (3/3)

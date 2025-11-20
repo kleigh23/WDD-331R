@@ -26,6 +26,8 @@
     content: "S";
   }*/
 
+ 
+
   p:first-child {
     font-weight: var(--font-weight-strong);
     letter-spacing: 0.03em;
@@ -40,10 +42,43 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
     font-size: $font-size-h4;
+    z-index: 5;
   }
 
   .container > :last-child {
     margin-bottom: 3rem; // Kim - I raised the footer text to be above the water
+  }
+
+  /* Footer foam animated - Kim */
+
+  @keyframes pulsing-foam {
+    0%{
+      transform: translateX(-50%) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-50%) scale(1.1);
+      opacity: 0.85;
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  ul::after {
+    content: "";
+    position: absolute;
+    left: 12%;
+    bottom: 85px;
+    width: min(2500px, 100vw);
+    height: 300px;
+    background-image: url('../images/bottom-river-long-foam.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transform: translateX(-50%) translateY(-10px) scale(1);
+    animation: pulsing-foam 2s infinite;
+    z-index: -1;
   }
 
   /* Footer water animated - Kim */

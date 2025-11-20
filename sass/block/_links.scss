@@ -60,8 +60,9 @@
 .page-footer [class^="link"] {
   width: 100%;
   min-height: 2.5em;
-  background-color: var(--color-background);
-  color: var(--color-primary);
+  background-color: $color-slate;
+  box-shadow: 0.3em 0.3em $color-moss;
+  color: white;
 }
 
 /* (Sheyla): commented out to style "Fork the CodePen as a button" (3/3)
