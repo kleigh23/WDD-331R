@@ -670,7 +670,7 @@ nav ul li {
   --logomark-padding: 0;
   position: relative;
   padding: 6rem 1rem;
-  background-image: url("/images/bottom-river-long-blue-01.png");
+  background-image: url("images/bottom-river-long-blue-01.png");
   background-size: cover;
   background-position: center bottom;
   color: #274c77;
