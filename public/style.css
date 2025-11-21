@@ -267,7 +267,7 @@ header {
 }
 
 header .container {
-  background-image: url("images/mountains-green-01.png");
+  background-image: url("images/mountains-background-01.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -280,7 +280,6 @@ header .container {
   z-index: -1;
 }
 header .container h1 {
-  background-image: url("images/tree-green-01-2.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -294,7 +293,6 @@ header .container h1 {
   transform: translateZ(-10px) scale(2);
 }
 header .container h2 {
-  background-image: url("images/hill-brown-01-2.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;

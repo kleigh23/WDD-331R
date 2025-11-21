@@ -27,7 +27,7 @@ header {
 }
 
 header .container {
-  background-image: url('images/mountains-green-01.png'); // this is where we styled the images for the header.
+  background-image: url('images/mountains-background-01.png'); // this is where we styled the images for the header. //changed from mountains-green-01 to mountains-background-01 which combines all pictures (-Sheyla)
   background-repeat: no-repeat; // Kim - don't repeat the image
   background-position: center top; // Kim - position the tree within the element
   background-size: cover;
@@ -43,7 +43,7 @@ header .container {
  
 
   h1{
-    background-image: url('images/tree-green-01-2.png'); // Kim - edited image to have less whitespace
+    // background-image: url('images/tree-green-01-2.png'); // Kim - edited image to have less whitespace //Sheyla- commented this to remove and use combined image instead
     background-repeat: no-repeat; // Kim - don't repeat the image
     background-position: right; // Kim - position the tree within the element
     background-size: contain; // Kim - make the hill responsive
@@ -58,7 +58,7 @@ header .container {
      transform: translateZ(-10px) scale(2); // Kim - parallax
   }
   h2{
-    background-image: url('images/hill-brown-01-2.png'); // Kim - edited image to have less whitespace
+    // background-image: url('images/hill-brown-01-2.png'); // Kim - edited image to have less whitespace //Sheyla- commented this to remove and use combined image instead
     background-repeat: no-repeat; // Kim - don't repeat the image
     background-position: right bottom; // Kim - position the hill within the element
     background-size: contain; // Kim - make the hill responsive
