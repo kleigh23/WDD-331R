@@ -1,7 +1,8 @@
 // stylelint-disable no-descending-specificity
 body {
-  background-image: url('images/waterfall-blue-long-01.png');
-  background-color: var(--color-background);
+  background-image: url('images/waterfall-blue-long-02.png');
+  background-repeat: repeat-y; // Kim - repeat the image vertically
+  background-color: white; // Kim - changed to white so the footer image would show
   color: var(--color-text);
   font-family: var(--font-family);
 }

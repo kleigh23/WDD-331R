@@ -5,7 +5,7 @@ header {
   display: grid;
   min-height: 40vh;
   place-items: center;
-  padding: 10vh 2rem;
+  // padding: 10vh 2rem; Kim - commenting this out to have our mountain image fill the whole space
   // Kim - Commenting this out removed the banner of flags at the top
   //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%233a00ff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
     //url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d42257' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -28,24 +28,46 @@ header {
 
 header .container {
   background-image: url('images/mountains-green-01.png'); // this is where we styled the images for the header.
-  height: 4000px;
+  background-repeat: no-repeat; // Kim - don't repeat the image
+  background-position: center top; // Kim - position the tree within the element
+  background-size: cover;
+  height: 100vh; // Kim - reduced height from 4000px
   width: 100%;
   position: relative;
+
+
+  overflow-y: auto; // Kim - parallax
+  overflow-x: hidden; // Kim - parallax
+  perspective: 10px; // Kim - parallax
+  z-index: -1;
+ 
+
   h1{
-    background-image: url('images/tree-green-01.png');
+    background-image: url('images/tree-green-01-2.png'); // Kim - edited image to have less whitespace
+    background-repeat: no-repeat; // Kim - don't repeat the image
+    background-position: right; // Kim - position the tree within the element
+    background-size: contain; // Kim - make the hill responsive
+    transform: translateY(2rem); // Kim - moved tree down to fit with hill
     position: absolute;
-    height: 4000px;
+    height: 100%; // Kim - reduced height from 4000px
     width: 100%;
     z-index: 1;
     padding-top: 1em;
+
+     transform: translateZ(-10px) scale(2); // Kim - parallax
   }
   h2{
-    background-image: url('images/hill-brown-01.png');
+    background-image: url('images/hill-brown-01-2.png'); // Kim - edited image to have less whitespace
+    background-repeat: no-repeat; // Kim - don't repeat the image
+    background-position: right bottom; // Kim - position the hill within the element
+    background-size: contain; // Kim - make the hill responsive
     position: absolute;
-    height: 4000px;
+    height: 100%; // Kim - reduced height from 4000px
     width: 100%;
     z-index: 10;
-    padding-top: 7em;
+    padding-top: 8em; // Kim - lowered top from 7em
+
+     transform: translateZ(-5px) scale(1.5); // Kim - parallax
   }
   p {
     position: absolute;
@@ -53,6 +75,10 @@ header .container {
     width: 100%;
     z-index: 10;
     padding-top: 25em;
+  }
+
+  .link-github {
+    margin-top: 29em; // this is where we edited the margin for the github button in the header.
   }
 
 }
