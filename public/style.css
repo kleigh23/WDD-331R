@@ -290,6 +290,7 @@ header .container h1 {
   width: 100%;
   z-index: 1;
   padding-top: 1em;
+  color: #274c77;
   transform: translateZ(-10px) scale(2);
 }
 header .container h2 {
@@ -302,6 +303,8 @@ header .container h2 {
   width: 100%;
   z-index: 10;
   padding-top: 8em;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  /* Bottom-right shadow */
   transform: translateZ(-5px) scale(1.5);
 }
 header .container p {
@@ -310,6 +313,10 @@ header .container p {
   width: 100%;
   z-index: 10;
   padding-top: 25em;
+  color: black;
+}
+header .container p a {
+  color: black;
 }
 header .container .link-github {
   margin-top: 29em;

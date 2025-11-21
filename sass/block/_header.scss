@@ -53,6 +53,7 @@ header .container {
     width: 100%;
     z-index: 1;
     padding-top: 1em;
+    color: $color-secondary;
 
      transform: translateZ(-10px) scale(2); // Kim - parallax
   }
@@ -66,6 +67,11 @@ header .container {
     width: 100%;
     z-index: 10;
     padding-top: 8em; // Kim - lowered top from 7em
+    text-shadow:
+    -1px -1px 0 black, /* Top-left shadow */
+    1px -1px 0 black,  /* Top-right shadow */
+    -1px 1px 0 black,  /* Bottom-left shadow */
+    1px 1px 0 black;   /* Bottom-right shadow */
 
      transform: translateZ(-5px) scale(1.5); // Kim - parallax
   }
@@ -75,6 +81,10 @@ header .container {
     width: 100%;
     z-index: 10;
     padding-top: 25em;
+    color: black;
+    a {
+      color: black;
+    }
   }
 
   .link-github {
