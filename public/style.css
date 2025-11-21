@@ -206,7 +206,7 @@ blockquote::after {
 }
 
 body {
-  background-image: url("../images/waterfall-blue-long-01.png");
+  background-image: url("images/waterfall-blue-long-01.png");
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
@@ -267,13 +267,13 @@ header {
 }
 
 header .container {
-  background-image: url("./images/mountains-green-01.png");
+  background-image: url("images/mountains-green-01.png");
   height: 4000px;
   width: 100%;
   position: relative;
 }
 header .container h1 {
-  background-image: url("../images/tree-green-01.png");
+  background-image: url("images/tree-green-01.png");
   position: absolute;
   height: 4000px;
   width: 100%;
@@ -281,7 +281,7 @@ header .container h1 {
   padding-top: 1em;
 }
 header .container h2 {
-  background-image: url("/images/hill-brown-01.png");
+  background-image: url("images/hill-brown-01.png");
   position: absolute;
   height: 4000px;
   width: 100%;
