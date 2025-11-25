@@ -53,9 +53,9 @@
   }
 
   @media (min-width: 180ch) {
-    position: fixed;
-    right: 2vmin;
-    bottom: 2vmin;
+    // position: fixed; - kelley made the current stage style sit in one place instead of float along the bottom side.
+    // right: 2vmin;
+    // bottom: 2vmin;
     max-width: 30ch;
     margin-bottom: 0;
     border-radius: var(--border-radius);
