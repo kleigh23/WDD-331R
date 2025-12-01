@@ -28,7 +28,7 @@ header {
 
 header .container {
   background-image: url('images/waterfall-blue-long-01.png'), // this is where we styled the images for the header. //changed from mountains-green-01 to mountains-background-01 which combines all pictures (-Sheyla)
-                    url('images/mountains-background-01.png');
+                    url('images/mountains-background-02.png');
   //background-attachment: fixed;
   background-repeat: no-repeat; // Kim - don't repeat the image
   background-position: center top; // Kim - position the tree within the element
@@ -36,7 +36,7 @@ header .container {
   //height: 100vh; // Kim - reduced height from 4000px
   width: 100%;
   //max-width: 1834px;
-  height: 1839px;
+  height: 1837px;
   position: relative;
 
   h1{
