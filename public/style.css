@@ -52,7 +52,6 @@ body {
   font-size: 100%;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
 }
 
 /* Make images easier to work with */
@@ -207,6 +206,9 @@ body {
   background-image: url("images/waterfall-blue-long-02.png");
   background-repeat: repeat-y;
   background-color: white;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--color-text);
   font-family: var(--font-family);
 }
@@ -265,47 +267,31 @@ header {
 }
 
 header .container {
-  background-image: url("images/mountains-background-01.png");
+  background-image: url("images/waterfall-blue-long-01.png"), url("images/mountains-background-01.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  height: 100vh;
   width: 100%;
+  height: 1839px;
   position: relative;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-  z-index: -1;
 }
 header .container h1 {
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  transform: translateY(2rem);
   position: absolute;
-  height: 100%;
   width: 100%;
   z-index: 1;
   padding-top: 1em;
   color: #274c77;
-  transform: translateZ(-10px) scale(2);
 }
 header .container h2 {
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: contain;
   position: absolute;
-  height: 100%;
   width: 100%;
   z-index: 10;
   padding-top: 8em;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   /* Bottom-right shadow */
-  transform: translateZ(-5px) scale(1.5);
 }
 header .container p {
   position: absolute;
-  height: 4000px;
   width: 100%;
   z-index: 10;
   padding-top: 25em;
@@ -323,30 +309,64 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 2rem;
   list-style: none;
 }
+nav ul li {
+  margin: 0.25rem;
+  font-size: 1.75rem;
+}
 nav ul a {
+  position: relative;
   display: inline-grid;
   padding: 0.5rem;
   color: var(--color-secondary);
-  font-size: 1.25rem;
   text-decoration: none;
 }
 nav ul a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 2px solid #25312e;
+  border-bottom: 2px solid #25312e;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
+}
+nav ul a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #6b9080;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+nav ul a:hover {
+  color: #fff;
+}
+nav ul a:hover::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+nav ul a:hover::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/*&::before {
   width: 100%;
   height: 0.33em;
   background-color: var(--color-secondary);
   opacity: 0.15;
   content: "";
 }
-nav ul a:hover::before, nav ul a:focus::before {
-  opacity: 1;
-}
-nav ul li {
-  margin: 0.25rem;
-}
 
+&:hover::before,
+&:focus::before {
+  opacity: 1;
+}*/
 #about section:nth-child(2) {
   position: relative;
   /*&::before {
