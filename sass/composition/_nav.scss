@@ -36,7 +36,7 @@ nav {
         border-bottom: 2px solid $color-secondary;
         transform: scaleY(2);
         opacity: 0;
-        transition: .3s ease-in-out;
+        transition: .3s;
         z-index: 1;
       }
       &::after {
@@ -49,7 +49,7 @@ nav {
         background-color: $color-secondary;
         transform: scale(0);
         opacity: 0;
-        transition: .3s ease-in-out;
+        transition: .3s;
         z-index: -1;
       }
 

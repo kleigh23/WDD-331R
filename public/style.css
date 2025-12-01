@@ -335,7 +335,7 @@ nav ul a::before {
   border-bottom: 2px solid #274c77;
   transform: scaleY(2);
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s;
   z-index: 1;
 }
 nav ul a::after {
@@ -348,7 +348,7 @@ nav ul a::after {
   background-color: #274c77;
   transform: scale(0);
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s;
   z-index: -1;
 }
 nav ul a:hover {
