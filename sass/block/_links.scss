@@ -25,7 +25,8 @@
   min-height: 3em;
   background-color: var(--color-primary);
   color: #fff;
-  box-shadow: 0.18em 0.18em var(--color-secondary);
+  //box-shadow: 0.18em 0.18em var(--color-secondary);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1.5em; //added to make buttons more rounded
 }
 
@@ -37,7 +38,6 @@
   align-items: center;
   justify-content: center;
   padding: 0 0.75em;
-  transform: translate(0, 0);
   transition: 180ms all ease-in-out;
   font-size: 1.125rem;
   line-height: 1;
@@ -46,8 +46,9 @@
 
   &:hover,
   &:focus {
-    transform: translate(-0.15em, -0.15em);
-    box-shadow: 0.3em 0.3em var(--color-secondary);
+    //transform: scale(1.1);
+    transform: rotate(-10deg);
+    //box-shadow: 0.3em 0.3em var(--color-secondary);
   }
 
   &:focus {
@@ -60,9 +61,14 @@
 .page-footer [class^="link"] {
   width: 100%;
   min-height: 2.5em;
-  background-color: $color-slate;
-  box-shadow: 0.3em 0.3em $color-moss;
+  background-color: $color-secondary;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 
 /* (Sheyla): commented out to style "Fork the CodePen as a button" (3/3)
@@ -100,5 +106,10 @@
     height: 1em;
     margin-right: 0.25em;
     fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
   }
 }
