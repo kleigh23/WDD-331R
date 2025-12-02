@@ -1,9 +1,35 @@
 $color-primary: #6096ba !default;
+// $color-primary: #121212; //testing 12/2/25- sheyla
 $color-primary-alt: #6b9080 !default;
 $color-secondary: #274c77 !default;
 $color-background: #e7ecef !default;
 $color-moss: #25312e;
 $color-slate: #5f7470;
+
+//**** Sheyla - working on features section background pattern colors:
+$color-tree-trunk: #604b38;
+$color-mountain-light-green: #68998a;
+$color-mountain-dark-green: #457f6f;
+$c2a: #457f6f;//$color-mountain-dark-green;
+$c1: #604b38; //$color-tree-trunk;
+$c2: #68998a; //$color-mountain-light-green;
+$c3: #457f6f; //$color-mountain-dark-green;
+
+//for features section patterns:
+$s: 22px; /* control the size*/
+// $c1: $color-tree-trunk;
+// $$color-mountain-light-green: $color-mountain-light-green;
+// $color-mountain-dark-green: $color-mountain-dark-green;
+
+$b: calc($s/2.67); /* control the thickness of the wavy line */
+
+$_r: calc(1.28*$s + $b/2) at left 50%;
+$_f: calc(100% - $b),$color-tree-trunk calc(101% - $b) 100%,#0000 101%;
+$g0: calc(-.8*$s),$color-mountain-light-green $_f;
+$g1: calc(-.8*$s),$color-mountain-dark-green $_f;
+$_s: calc(1.5*$s + $b);
+
+//******** 
 
 $brand-colors: (
   primary: $color-primary,

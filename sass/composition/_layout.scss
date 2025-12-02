@@ -1,7 +1,8 @@
 // stylelint-disable no-descending-specificity
 body {
   
-  background-image: url('images/waterfall-blue-long-02.png'),
+  // background-image: url('images/waterfall-blue-long-02.png'), //Sheyla- added below the waterfall image with less space on the left
+  background-image: url('images/waterfall-blue-long-03.png'),
                     linear-gradient($color-primary, $color-background, white); // Kim - changed to white so the footer image would show
   background-repeat: repeat-y, no-repeat; // Kim - repeat the image vertically
   background-position: center center, center center;
