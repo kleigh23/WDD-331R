@@ -38,7 +38,7 @@ h2 {
 *a background image or other shape later" */
 #main h2::first-letter {
   font-family: var(--font-family-heading-2);
-  background-color: var(--color-text);
+  background-color: var(--color-secondary);
   color: var(--color-background);
   padding-left: 0.5em;
 }

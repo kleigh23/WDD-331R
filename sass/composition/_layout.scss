@@ -3,7 +3,7 @@ body {
   
   // background-image: url('images/waterfall-blue-long-02.png'), //Sheyla- added below the waterfall image with less space on the left
   background-image: url('images/waterfall-blue-long-03.png'),
-                    linear-gradient($color-primary, $color-background, white); // Kim - changed to white so the footer image would show
+                    linear-gradient($color-primary, $color-background, $c3); // Kim - changed to white so the footer image would show
   background-repeat: repeat-y, no-repeat; // Kim - repeat the image vertically
   background-position: center center, center center;
   background-attachment: fixed, scroll;
@@ -25,6 +25,7 @@ main {
   }
 }
 
+
 article {
   section {
     // display: flex;
@@ -32,6 +33,14 @@ article {
     align-items: flex-start;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    background-color: rgba($color: $color-mountain-dark-green, $alpha: 0.7);
+    box-shadow: 0px 0px 5px 20px rgba($color: $color-mountain-dark-green, $alpha: 0.7);
+    h2, p, ol, blockquote {
+      color: white;
+    }
+    h3, a {
+      color: $color-secondary;
+    }
   }
 }
 
@@ -43,7 +52,16 @@ article,
     max-width: 80ch;
     margin-right: auto;
     margin-left: auto;
+    h2 {
+      color: $color-secondary;
+      
+    }
   }
+}
+
+#styles h2 {
+  font-family: var(--font-family-title);
+  font-size: 5em;
 }
 
 article,

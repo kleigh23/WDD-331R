@@ -27,17 +27,26 @@ header {
 }
 
 header .container {
-  background-image: url('images/waterfall-blue-long-01.png'), // this is where we styled the images for the header. //changed from mountains-green-01 to mountains-background-01 which combines all pictures (-Sheyla)
+  background-image: // url('images/waterfall-blue-long-01.png'), // this is where we styled the images for the header. //changed from mountains-green-01 to mountains-background-01 which combines all pictures (-Sheyla)
                     url('images/mountains-background-02.png');
-  //background-attachment: fixed;
+  // background-attachment: fixed;
   background-repeat: no-repeat; // Kim - don't repeat the image
   background-position: center top; // Kim - position the tree within the element
   background-size: cover;
   //height: 100vh; // Kim - reduced height from 4000px
   width: 100%;
   //max-width: 1834px;
-  height: 1837px;
+  // height: 1837px;
+  height: 135vh; // change the height on the image in the header - kelley
   position: relative;
+  padding-top: 5%;
+  @media(max-width: 768px) {
+    height: 100vh;
+    h2, p {
+      background-color: rgba($color: $color-mountain-dark-green, $alpha: 0.7);
+      box-shadow: 0px 0px 5px 20px rgba($color: $color-mountain-dark-green, $alpha: 0.7);
+    }
+  }
 
   h1{
     // background-image: url('images/tree-green-01-2.png'); // Kim - edited image to have less whitespace //Sheyla- commented this to remove and use combined image instead
@@ -45,11 +54,11 @@ header .container {
     //background-position: right; // Kim - position the tree within the element
     //background-size: contain; // Kim - make the hill responsive
     //transform: translateY(2rem); // Kim - moved tree down to fit with hill
-    position: absolute;
+    // position: absolute;
     //height: 100%; // Kim - reduced height from 4000px
     width: 100%;
     z-index: 1;
-    padding-top: 1em;
+    // padding-top: 1em;
     color: $color-secondary;
 
   }
@@ -58,24 +67,26 @@ header .container {
     //background-repeat: no-repeat; // Kim - don't repeat the image
     //background-position: right bottom; // Kim - position the hill within the element
     //background-size: contain; // Kim - make the hill responsive
-    position: absolute;
+    // position: absolute;
     //height: 100%; // Kim - reduced height from 4000px
     width: 100%;
+    font-size: 2.5rem;
     z-index: 10;
-    padding-top: 8em; // Kim - lowered top from 7em
-    text-shadow:
-    -1px -1px 0 black, /* Top-left shadow */
-    1px -1px 0 black,  /* Top-right shadow */
-    -1px 1px 0 black,  /* Bottom-left shadow */
-    1px 1px 0 black;   /* Bottom-right shadow */
+    // padding-top: 8em; // Kim - lowered top from 7em
+    color: black;
+    // text-shadow:
+    // -1px -1px 0 black, /* Top-left shadow */
+    // 1px -1px 0 black,  /* Top-right shadow */
+    // -1px 1px 0 black,  /* Bottom-left shadow */
+    // 1px 1px 0 black;   /* Bottom-right shadow */
 
   }
   p {
-    position: absolute;
+    // position: absolute;
     //height: 4000px;
     width: 100%;
     z-index: 10;
-    padding-top: 25em;
+    // padding-top: 25em;
     color: black;
     a {
       color: black;
@@ -83,7 +94,7 @@ header .container {
   }
 
   .link-github {
-    margin-top: 29em; // this is where we edited the margin for the github button in the header.
+    // margin-top: 29em; // this is where we edited the margin for the github button in the header.
   }
 
 }

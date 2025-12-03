@@ -95,9 +95,9 @@
 .link-allstyles {
   font-size: var(--font-size-h4);
 
-  @media (max-width: 400px) {
-    margin-left: 6rem;
-  }
+  // @media (max-width: 400px) // commented out to keep the position of the view all styles button.
+  //   margin-left: 6rem;
+  // }
 }
 
 .link-github {

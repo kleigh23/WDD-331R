@@ -4,6 +4,11 @@
   margin: 1rem auto 10vh;
   padding: 1.25rem;
   z-index: 1;
+  max-width: 30ch;
+  margin-bottom: 0;
+  border-radius: var(--border-radius);
+  background-color: var(--color-light);
+  box-shadow: 0 2px 5px rgba(color(primary), 0.15);
 
   h4 {
     margin: 0;
@@ -60,7 +65,7 @@
         color: white;
 
         &::before {
-          content: "Group 2 Style Stage Project";
+          content: "Waterfall";
           color: var(--color-secondary);
         }
       }
