@@ -1,4 +1,13 @@
 // stylelint-disable no-descending-specificity
+
+//sheyla- removing white space on the right
+html, body {
+  // margin: 0;
+  // padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   
   // background-image: url('images/waterfall-blue-long-02.png'), //Sheyla- added below the waterfall image with less space on the left
@@ -10,6 +19,21 @@ body {
   background-size: cover, cover;
   color: var(--color-text);
   font-family: var(--font-family);
+  animation: waterfall-move 15s linear infinite; //Sheyla- watefall animation
+  @media(max-width: 600px){
+        animation: waterfall-move 1s linear infinite; //Sheyla- watefall animation
+    }
+}
+
+//Sheyla- waterfall animation:
+@keyframes waterfall-move {
+ 
+    from {
+    background-position: 0 100% ; 
+  }
+  to {
+    background-position: 0 0 ;
+  }
 }
 
 main {
@@ -33,6 +57,7 @@ article {
     align-items: flex-start;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    margin-bottom: 4em; //sheyla- added margin to separate sections
     background-color: rgba($color: $color-mountain-dark-green, $alpha: 0.7);
     box-shadow: 0px 0px 5px 20px rgba($color: $color-mountain-dark-green, $alpha: 0.7);
     h2, p, ol, blockquote {
@@ -49,9 +74,13 @@ article,
 #styles {
   .container {
     width: 100%;
-    max-width: 80ch;
+    max-width: 50%; //sheyla- changed from 80ch to 80% to look better on mobile
     margin-right: auto;
     margin-left: auto;
+    @media (max-width: 810px) {
+      max-width: 80%;
+    }
+
     h2 {
       color: $color-secondary;
       
@@ -64,10 +93,11 @@ article,
   font-size: 5em;
 }
 
-article,
-#styles {
-  padding: 1rem;
-}
+// Sheyla- removed padding to fix the overlap of sections
+// article,
+// #styles {
+//   padding: 1rem;
+// }
 
 .page-footer ul,
 .features {

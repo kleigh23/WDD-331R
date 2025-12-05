@@ -42,6 +42,7 @@
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 
+  
   /*! 
     * SVGs from Hero Patterns
     * @link http://www.heropatterns.com/
@@ -55,6 +56,8 @@
     color: var(--color-light);
     text-align: center;
 
+  
+
     > span {
       display: grid;
       place-content: center;
@@ -64,11 +67,15 @@
       background-color: var(--color-secondary);
       line-height: 1.1;
 
+   
+
       a {
         color: inherit;
         font-size: 1.3rem;
         font-weight: var(--font-weight-strong);
         text-decoration: none;
+
+        
 
         // stylelint-disable-next-line max-nesting-depth
         &::before {
@@ -78,6 +85,8 @@
           width: 100%;
           height: 100%;
           content: "";
+
+          
         }
       }
 
@@ -86,11 +95,19 @@
       }
     }
   }
+
+  :hover  {
+    background-color: var(--darkgreen);
+    // border: 2px solid var(--color-light);
+  }
 }
 
 #styles {
-  margin: 5vh 0 20vh;
+  // margin: 5vh 0 20vh;
+  margin: 5vh 0 ; //sheyla- removed bottom margin to close big gap from footer
+
   text-align: center;
+
 
   h2 {
     color: var(--color-primary);
@@ -99,6 +116,8 @@
 
 #styles .features,
 .features.patterned {
+
+   
   li {
       // background-color: var(--color-secondary);
       // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -116,6 +135,11 @@
       conic-gradient(var(--color-primary) 75%,var(--color-secondary) 0) 
       calc(var(--s)/2) calc(var(--s)/2)/
       calc(2*var(--s)) calc(2*var(--s));
+    
+      &:hover{
+        border: 2px solid var(--color-light);
+      } 
+   
     
 
     @media (min-width: 515px) and (max-width: 765px) {
