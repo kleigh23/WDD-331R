@@ -732,6 +732,7 @@ nav ul a:hover::after {
   --logomark-height: 2em;
   --logomark-padding: 0;
   position: relative;
+  overflow: hidden;
   padding: 6rem 1rem;
   background-image: url("images/bottom-river-blue.png");
   background-size: cover;
@@ -787,7 +788,7 @@ nav ul a:hover::after {
     opacity: 1;
   }
   50% {
-    transform: translateX(-50%) scale(1.1);
+    transform: translateX(-50%) translateY(-30%) scale(1.5);
     opacity: 0.85;
   }
   100% {
@@ -798,16 +799,30 @@ nav ul a:hover::after {
 .page-footer ul::after {
   content: "";
   position: absolute;
-  left: 12%;
-  bottom: 85px;
+  left: 25%;
+  bottom: 13%;
   width: min(2500px, 100vw);
   height: 300px;
   background-image: url("images/bottom-river-long-foam.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   transform: translateX(-50%) translateY(-10px) scale(1);
-  animation: pulsing-foam 2s infinite;
+  animation: pulsing-foam 4s infinite;
   z-index: -1;
+}
+@media (max-width: 2400px) {
+  .page-footer ul::after {
+    left: 45%;
+    bottom: 7%;
+  }
+}
+@media (max-width: 1520px) {
+  .page-footer ul::after {
+    left: 55%;
+    bottom: 0;
+    background-size: 80% auto;
+    background-position: left bottom;
+  }
 }
 @keyframes flowing-water {
   from {
@@ -829,6 +844,25 @@ nav ul a:hover::after {
   filter: blur(1px);
   z-index: 2;
   animation: flowing-water 4s ease-in-out infinite alternate;
+}
+@media (max-width: 2020px) {
+  .page-footer .container::after {
+    left: 10%;
+    width: min(600px, 70vw);
+  }
+}
+@media (max-width: 1240px) {
+  .page-footer .container::after {
+    bottom: 12px;
+    width: 350px;
+    height: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .page-footer .container::after {
+    left: 0;
+    bottom: 5px;
+  }
 }
 
 .skip-link {

@@ -2,6 +2,7 @@
   --logomark-height: 2em;
   --logomark-padding: 0;
   position: relative;
+  overflow: hidden; // Kim - to keep the waterfall from pulsing with the foam;
   padding: 6rem 1rem; // Kim - increased padding to show full height of background image
   // background-color: var(--color-primary);
   // background-image: url('images/bottom-river-long-blue-01.png');
@@ -66,12 +67,12 @@
   /* Footer foam animated - Kim */
 
   @keyframes pulsing-foam {
-    0%{
+    0% {
       transform: translateX(-50%) scale(1);
       opacity: 1;
     }
     50% {
-      transform: translateX(-50%) scale(1.1);
+      transform: translateX(-50%) translateY(-30%) scale(1.5);
       opacity: 0.85;
     }
     100% {
@@ -83,16 +84,26 @@
   ul::after {
     content: "";
     position: absolute;
-    left: 12%;
-    bottom: 85px;
+    left: 25%; //changed from 12%
+    bottom: 13%; //changed from 85px
     width: min(2500px, 100vw);
     height: 300px;
     background-image: url('images/bottom-river-long-foam.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     transform: translateX(-50%) translateY(-10px) scale(1);
-    animation: pulsing-foam 2s infinite;
+    animation: pulsing-foam 4s infinite;
     z-index: -1;
+    @media(max-width: 2400px){
+      left: 45%;
+      bottom: 7%;
+    }
+    @media(max-width: 1520px){
+      left: 55%;
+      bottom: 0;
+      background-size: 80% auto;
+      background-position: left bottom;
+    }
   }
 
   /* Footer water animated - Kim */
@@ -114,6 +125,27 @@
   filter: blur(1px);
   z-index: 2;
   animation: flowing-water 4s ease-in-out infinite alternate;
-}
+  }
 
+  @media(max-width: 2020px) {
+    .container::after {
+      left: 10%;
+      width: min(600px, 70vw);
+    }
+  }
+
+  @media(max-width: 1240px) {
+    .container::after {
+      bottom: 12px;
+      width: 350px;
+      height: 10px;
+    }
+  }
+
+  @media(max-width: 700px) {
+    .container::after {
+      left: 0;
+      bottom: 5px;
+    }
+  }
 }
