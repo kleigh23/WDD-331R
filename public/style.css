@@ -379,6 +379,7 @@ nav ul a {
   z-index: 0;
   text-decoration: none;
   background-color: rgba(96, 150, 186, 0.7);
+  /* Navigation hover animation -Kim */
 }
 nav ul a::before {
   content: "";
@@ -419,18 +420,6 @@ nav ul a:hover::after {
   opacity: 1;
 }
 
-/*&::before {
-  width: 100%;
-  height: 0.33em;
-  background-color: var(--color-secondary);
-  opacity: 0.15;
-  content: "";
-}
-
-&:hover::before,
-&:focus::before {
-  opacity: 1;
-}*/
 #about section:nth-child(2) {
   position: relative;
 }
