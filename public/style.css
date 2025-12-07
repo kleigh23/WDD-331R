@@ -299,8 +299,6 @@ article .container h2,
 }
 
 header {
-  --logomark-height: 3em;
-  --logomark-padding: 0 1em;
   display: grid;
   min-height: 40vh;
   place-items: center;
@@ -340,7 +338,6 @@ header .container h1 {
   color: #274c77;
 }
 header .container h2 {
-  width: 100%;
   font-size: 2.5rem;
   z-index: 10;
   color: black;
@@ -353,6 +350,7 @@ header .container p {
 header .container p a {
   color: black;
 }
+
 nav ul {
   display: flex;
   flex-wrap: wrap;

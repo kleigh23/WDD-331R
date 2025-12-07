@@ -1,45 +1,23 @@
 header {
-  --logomark-height: 3em;
-  --logomark-padding: 0 1em;
-
   display: grid;
   min-height: 40vh;
   place-items: center;
-  // padding: 10vh 2rem; Kim - commenting this out to have our mountain image fill the whole space
-  // Kim - Commenting this out removed the banner of flags at the top
-  //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%233a00ff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
-    //url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d42257' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat-x;
   background-position: 0 -38px, 17px -40px;
   color: var(--color-primary);
   text-align: center;
-
-  // h1 {
-  //   @include logomark; 
-  // }
-
-  // h2 {
-  //   max-width: 30ch;
-  // }
-
-  // background-image: url('../images/mountains-green-01.png');
-  // height: 3000px;
 }
 
 header .container {
-  background-image: // url('images/waterfall-blue-long-01.png'), // this is where we styled the images for the header. //changed from mountains-green-01 to mountains-background-01 which combines all pictures (-Sheyla)
-                    url('images/mountains-background-02.png');
-  // background-attachment: fixed;
-  background-repeat: no-repeat; // Kim - don't repeat the image
-  background-position: center top; // Kim - position the tree within the element
+  background-image: url('images/mountains-background-02.png'); // Mountain background in header            
+  background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
-  //height: 100vh; // Kim - reduced height from 4000px
   width: 100%;
-  //max-width: 1834px;
-  // height: 1837px;
-  height: 135vh; // change the height on the image in the header - kelley
+  height: 135vh;
   position: relative;
   padding-top: 5%;
+
   @media(max-width: 1300px) {
     height: 1800px;
 
@@ -53,54 +31,25 @@ header .container {
   }
 
   h1{
-    // background-image: url('images/tree-green-01-2.png'); // Kim - edited image to have less whitespace //Sheyla- commented this to remove and use combined image instead
-    //background-repeat: no-repeat; // Kim - don't repeat the image
-    //background-position: right; // Kim - position the tree within the element
-    //background-size: contain; // Kim - make the hill responsive
-    //transform: translateY(2rem); // Kim - moved tree down to fit with hill
-    // position: absolute;
-    //height: 100%; // Kim - reduced height from 4000px
     width: 100%;
     z-index: 1;
-    // padding-top: 1em;
     color: $color-secondary;
-
   }
+
   h2{
-    // background-image: url('images/hill-brown-01-2.png'); // Kim - edited image to have less whitespace //Sheyla- commented this to remove and use combined image instead
-    //background-repeat: no-repeat; // Kim - don't repeat the image
-    //background-position: right bottom; // Kim - position the hill within the element
-    //background-size: contain; // Kim - make the hill responsive
-    // position: absolute;
-    //height: 100%; // Kim - reduced height from 4000px
-    width: 100%;
     font-size: 2.5rem;
     z-index: 10;
-    // padding-top: 8em; // Kim - lowered top from 7em
     color: black;
-    // text-shadow:
-    // -1px -1px 0 black, /* Top-left shadow */
-    // 1px -1px 0 black,  /* Top-right shadow */
-    // -1px 1px 0 black,  /* Bottom-left shadow */
-    // 1px 1px 0 black;   /* Bottom-right shadow */
-
   }
+
   p {
-    // position: absolute;
-    //height: 4000px;
     width: 100%;
     z-index: 10;
-    // padding-top: 25em;
     color: black;
     a {
       color: black;
     }
   }
-
-  .link-github {
-    // margin-top: 29em; // this is where we edited the margin for the github button in the header.
-  }
-
 }
 
 
