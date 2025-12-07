@@ -521,7 +521,6 @@ nav ul a:hover::after {
   padding-bottom: 100%;
   transform: translate(-50%, -50%);
   transition: 300ms transform ease-in;
-  opacity: 0.8;
   content: "";
   z-index: -1;
 }
