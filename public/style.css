@@ -100,15 +100,6 @@ h2 {
   font-size: clamp(2rem, 4vw, var(--font-size-h2));
 }
 
-/*(Sheyla:) "I commented this out because we wanted the h2 to be 
-* left justified instead of centered. While I was here 
-* I noticed the the rest of the code was putting a rectangle behind the H2s
-* in the main section, which we also don't want." */
-/* (Sheyla): "Added the following code to style the first letter of the H2s in the main section.
-*To remove box behind first letter, we could comment out 
-*the background-color, the color and the padding lines below. 
-*We could also replace the background-color line with
-*a background image or other shape later" */
 #main h2::first-letter {
   font-family: var(--font-family-heading-2);
   background-color: var(--color-secondary);
