@@ -228,6 +228,7 @@ body {
   }
 }
 
+/* Sheyla- Waterfall animation */
 @keyframes waterfall-move {
   from {
     background-position: 0 100%;

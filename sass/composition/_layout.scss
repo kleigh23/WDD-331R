@@ -1,31 +1,25 @@
-// stylelint-disable no-descending-specificity
-
-//sheyla- removing white space on the right
 html, body {
-  // margin: 0;
-  // padding: 0;
   width: 100%;
   overflow-x: hidden;
 }
 
 body {
-  
-  // background-image: url('images/waterfall-blue-long-02.png'), //Sheyla- added below the waterfall image with less space on the left
-  background-image: url('images/waterfall-blue-long-03.png'),
-                    linear-gradient($color-primary, $color-background, $c3); // Kim - changed to white so the footer image would show
-  background-repeat: repeat-y, no-repeat; // Kim - repeat the image vertically
+  background-image: url('images/waterfall-blue-long-03.png'), // Waterfall background
+                    linear-gradient($color-primary, $color-background, $c3); //Gradient color background
+  background-repeat: repeat-y, no-repeat;
   background-position: center center, center center;
   background-attachment: fixed, scroll;
   background-size: cover, cover;
   color: var(--color-text);
   font-family: var(--font-family);
-  animation: waterfall-move 15s linear infinite; //Sheyla- watefall animation
+  animation: waterfall-move 15s linear infinite; // Sheyla- Waterfall animation
   @media(max-width: 600px){
-        animation: waterfall-move 1s linear infinite; //Sheyla- watefall animation
+        animation: waterfall-move 1s linear infinite; // Sheyla- Waterfall animation
     }
 }
 
-//Sheyla- waterfall animation:
+/* Sheyla- Waterfall animation */
+
 @keyframes waterfall-move {
  
     from {
@@ -52,12 +46,11 @@ main {
 
 article {
   section {
-    // display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    margin-bottom: 4em; //sheyla- added margin to separate sections
+    margin-bottom: 4em; // Sheyla- Margin to separate sections
     background-color: rgba($color: $color-mountain-dark-green, $alpha: 0.7);
     box-shadow: 0px 0px 5px 20px rgba($color: $color-mountain-dark-green, $alpha: 0.7);
     h2, p, ol, blockquote {
@@ -74,7 +67,7 @@ article,
 #styles {
   .container {
     width: 100%;
-    max-width: 50%; //sheyla- changed from 80ch to 80% to look better on mobile
+    max-width: 50%;
     margin-right: auto;
     margin-left: auto;
     @media (max-width: 810px) {
@@ -92,12 +85,6 @@ article,
   font-family: var(--font-family-title);
   font-size: 5em;
 }
-
-// Sheyla- removed padding to fix the overlap of sections
-// article,
-// #styles {
-//   padding: 1rem;
-// }
 
 .page-footer ul,
 .features {
