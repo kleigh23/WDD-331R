@@ -1,11 +1,10 @@
 :root {
 
-  // Sheyla- All the code inside :root is for the background patterns in the features section (Still working on it)
+  // Sheyla- All the code inside :root is for the background patterns in the features section
 
     //pattern 1:
   --sa: 13px; /* control the size of feature background 3*/
     --c1a: #68998a;
-    // --var(--color-mountain-light-green)a: var(--color-mountain-dark-green);
     --c2a: #457f6f;//--color-mountain-dark-green;
     --c1: #604b38; //--color-tree-trunk;
     --c2: #68998a; //--color-mountain-light-green;
@@ -15,18 +14,7 @@
     //pattern 2:
 
     --s: 22px; /* control the size*/
-  // --c1: var(--color-tree-trunk);
-  // --var(--color-mountain-light-green): var(--color-mountain-light-green);
-  // --color-mountain-dark-green: var(--color-mountain-dark-green);
   
-  // --b: calc(var(--s)/2.67); /* control the thickness of the wavy line */
-  
-  // --_r: calc(1.28*var(--s) + var(--b)/2) at left 50%;
-  // --_f: calc(100% - var(--b)),var(--color-tree-trunk) calc(101% - var(--b)) 100%,#0000 101%;
-  // --g0: calc(-.8*var(--s)),var(--var(--color-mountain-light-green)) var(--_f);
-  // --g1: calc(-.8*var(--s)),var(--color-mountain-dark-green) var(--_f);
-  // --_s: calc(1.5*var(--s) + var(--b));
-
   //copy of above:
   --b: calc(var(--s)/2.67); /* control the thickness of the wavy line */
   
@@ -56,8 +44,6 @@
     color: var(--color-light);
     text-align: center;
 
-  
-
     > span {
       display: grid;
       place-content: center;
@@ -67,17 +53,12 @@
       background-color: var(--color-secondary);
       line-height: 1.1;
 
-   
-
       a {
         color: inherit;
         font-size: 1.3rem;
         font-weight: var(--font-weight-strong);
         text-decoration: none;
 
-        
-
-        // stylelint-disable-next-line max-nesting-depth
         &::before {
           position: absolute;
           top: 0;
@@ -98,16 +79,12 @@
 
   :hover  {
     background-color: var(--darkgreen);
-    // border: 2px solid var(--color-light);
   }
 }
 
 #styles {
-  // margin: 5vh 0 20vh;
-  margin: 5vh 0 ; //sheyla- removed bottom margin to close big gap from footer
-
+  margin: 5vh 0;
   text-align: center;
-
 
   h2 {
     color: var(--color-primary);
@@ -116,17 +93,8 @@
 
 #styles .features,
 .features.patterned {
-
    
   li {
-      // background-color: var(--color-secondary);
-      // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      //Sheyla - added different background images for each feature box:
-      
-      // --s: 22px; /* control the size*/
-      // --c1: #6096ba;
-      // --color-secondary: #274c77;
-  
     background:
       conic-gradient(at 25% 75%,#0000 25%,var(--color-primary) 0)
       calc(var(--s)/-8) calc(var(--s)/8)/var(--s) var(--s),
@@ -139,8 +107,6 @@
       &:hover{
         border: 2px solid var(--color-light);
       } 
-   
-    
 
     @media (min-width: 515px) and (max-width: 765px) {
       &:nth-last-child(1):nth-child(odd) {
@@ -188,21 +154,6 @@
     }
     
   }
-  // Got rid of this to remove the squiggly line and "Grid FTW" - Kelley 
-  // &::after {
-  //   position: absolute;
-  //   bottom: -4.5em;
-  //   width: 10ch;
-  //   padding-top: 3em;
-  //   transform: rotate(-15deg);
-  //   transform-origin: bottom right;
-  //   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 199.1 111.3'%3E%3Cpath fill='#{svgColor(primary-alt)}' d='M118 77a77 77 0 00-2-18c-2-4-3-9-3-13a29 29 0 011-12 19 19 0 017-9c4-3 8-4 13-3a14 14 0 018 7 31 31 0 012 5 75 75 0 005 10 47 47 0 002 5 17 17 0 003 3c4 4 8 4 13 0a15 15 0 005-8 37 37 0 001-7l1-11a18 18 0 014-11 2 2 0 000-3l-3-3-2-3a2 2 0 011-2 11 11 0 012-1l19-3c4 0 5 1 3 5l-7 16c-1 3-2 3-5 1l-4-5a1 1 0 00-1 0 9 9 0 00-3 5 23 23 0 00-1 6l-1 11a26 26 0 01-1 7 18 18 0 01-8 10c-5 3-9 3-13 0a20 20 0 01-6-6 68 68 0 01-6-13l-2-4a18 18 0 00-2-4 10 10 0 00-14-2 15 15 0 00-4 4 19 19 0 00-3 9 32 32 0 000 11l2 6a78 78 0 012 27 32 32 0 01-4 15 24 24 0 01-11 9 33 33 0 01-19 3 16 16 0 01-13-9 29 29 0 01-3-11 70 70 0 012-18l2-14a33 33 0 000-14c-1-4-4-7-8-7-7-1-14 1-19 6a34 34 0 00-6 9 59 59 0 00-4 10l-3 12-2 6a26 26 0 01-5 8 17 17 0 01-16 6 26 26 0 01-10-4 7 7 0 01-2-1 2 2 0 010-2 2 2 0 012 0l3 1a22 22 0 0010 3 13 13 0 009-4 22 22 0 005-6 41 41 0 003-8l3-12a59 59 0 015-13 31 31 0 017-9c6-5 14-7 22-5a12 12 0 019 7 21 21 0 011 7 57 57 0 01-2 17 132 132 0 00-2 16 37 37 0 000 13 27 27 0 002 5 13 13 0 0011 8 30 30 0 0016-3 22 22 0 0010-10c3-4 3-9 4-13v-5z'/%3E%3C/svg%3E");
-  //   background-repeat: no-repeat;
-  //   background-size: 90%;
-  //   color: var(--color-primary-alt);
-  //   font-size: 0.9rem;
-  //   content: "Grid FTW!";
-  // }
 }
 
 
