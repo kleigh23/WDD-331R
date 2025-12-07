@@ -926,8 +926,6 @@ nav ul a:hover::after {
   transform: scale(1.1);
 }
 
-/* (Sheyla): commented out to style "Fork the CodePen as a button" (3/3)
-* It also took the "Jump right in" text off */
 .link-allstyles {
   font-size: var(--font-size-h4);
 }
