@@ -728,8 +728,6 @@ nav ul a:hover::after {
 }
 
 .page-footer {
-  --logomark-height: 2em;
-  --logomark-padding: 0;
   position: relative;
   overflow: hidden;
   padding: 6rem 1rem;
@@ -738,20 +736,8 @@ nav ul a:hover::after {
   background-position: center bottom;
   color: white;
   padding-right: 0;
-  /*&::before {
-    @include logomark;
-
-    position: absolute;
-    left: 50%;
-    width: 2em;
-    transform: translate(-50%, -100%);
-    background-color: var(--color-background);
-    color: var(--color-primary);
-    font-size: 3rem;
-    content: "S";
-  }*/
-  /* Footer foam animated - Kim */
-  /* Footer water animated - Kim */
+  /* Footer foam animated -Kim */
+  /* Footer water animated -Kim */
 }
 .page-footer p:first-child {
   font-weight: var(--font-weight-strong);
