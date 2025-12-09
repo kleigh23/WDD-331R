@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Fleur+De+Leah&display=swap");
-/* Featured Styles section background pattern colors */
-/* Featured Styles section patterns */
-/* control the size*/
-/* control the thickness of the wavy line */
+/* control the size of features pattern*/
 :root {
   --color-primary: #6096ba;
   --color-primary-alt: #6b9080;
@@ -534,23 +531,8 @@ nav ul a:hover::after {
 }
 
 :root {
-  --sa: 13px;
-  /* control the size of feature background 3*/
-  --c1a: #68998a;
-  --c2a: #457f6f;
-  --c1: #604b38;
-  --c2: #68998a;
-  --darkgreen: #457f6f;
-  --c:var(--c1a) 99%,#0000 101%;
   --s: 22px;
-  /* control the size*/
-  --b: calc(var(--s)/2.67);
-  /* control the thickness of the wavy line */
-  --_r: calc(1.28*var(--s) + var(--b)/2) at left 50%;
-  --_f: calc(100% - var(--b)),var(--c1) calc(101% - var(--b)) 100%,#0000 101%;
-  --g0: calc(-.8*var(--s)),var(--var(--c2)) var(--_f);
-  --g1: calc(-.8*var(--s)),var(--c3) var(--_f);
-  --_s: calc(1.5*var(--s) + var(--b));
+  /* control the size of features pattern*/
 }
 
 .features {
@@ -598,7 +580,7 @@ nav ul a:hover::after {
   position: relative;
 }
 .features :hover {
-  background-color: var(--darkgreen);
+  background-color: #457f6f;
 }
 
 #styles {
@@ -623,6 +605,7 @@ nav ul a:hover::after {
     grid-column: span 2;
   }
 }
+
 .profile {
   width: 95vw;
   max-width: 80ch;

@@ -5,7 +5,7 @@ html, body {
 
 body {
   background-image: url('images/waterfall-blue-long-03.png'), // Waterfall background
-                    linear-gradient($color-primary, $color-background, $c3); //Gradient color background
+                    linear-gradient($color-primary, $color-background, $color-mountain-dark-green); //Gradient color background
   background-repeat: repeat-y, no-repeat;
   background-position: center center, center center;
   background-attachment: fixed, scroll;
