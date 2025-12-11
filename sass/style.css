@@ -352,10 +352,7 @@ nav ul li {
   background-color: var(--color-light);
 }
 
-#guidelines {
-  /* (Sheyla): "I commented this out because we wanted the h2 "TL;DR" to be
-  like the other h2s in the webpage, instead of having a tilted and gradient text effect.*/
-}
+
 @supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
   #guidelines p:nth-of-type(2) {
     position: relative;
